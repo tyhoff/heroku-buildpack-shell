@@ -8,6 +8,8 @@ echo "$1"
 echo "$2"
 echo "$3"
 
+ls -al "$1"
+
 cd "$BUILD_DIR"
 
 echo "Running .heroku/run.sh" | sed 's/^/-----> /'
